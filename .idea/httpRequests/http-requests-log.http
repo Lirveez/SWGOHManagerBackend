@@ -1,0 +1,128 @@
+GET 46.101.133.141:8080/GuildNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET 46.101.133.141:8080/GuildNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/GuildNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNam
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames()
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/services/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/giveNames
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET https://swgoh.gg/api/guild/26825/
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-25T032533.200.json
+
+###
+
