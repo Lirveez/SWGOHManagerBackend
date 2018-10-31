@@ -1,3 +1,107 @@
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-30T043727.200.json
+
+###
+
+GET localhost:8080/
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080/
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+###
+
 GET 46.101.133.141:8080/GuildNames
 Accept: */*
 Cache-Control: no-cache

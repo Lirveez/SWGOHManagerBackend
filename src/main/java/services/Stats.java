@@ -11,6 +11,18 @@ public class Stats {
     private int potency_18;
     private int armor_28;
 
+    public Stats(int hp_1, int speed_5, int phys_dmg_6, int spec_dmg_7, int crit_14, int spec_crit_15, int crit_dmg_16, int potency_18, int armor_28) {
+        this.hp_1 = hp_1;
+        this.speed_5 = speed_5;
+        this.phys_dmg_6 = phys_dmg_6;
+        this.spec_dmg_7 = spec_dmg_7;
+        this.crit_14 = crit_14;
+        this.spec_crit_15 = spec_crit_15;
+        this.crit_dmg_16 = crit_dmg_16;
+        this.potency_18 = potency_18;
+        this.armor_28 = armor_28;
+    }
+
     public int getCrit_14() {
         return crit_14;
     }

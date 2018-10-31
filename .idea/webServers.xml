@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="064f870e-c2f8-4aa8-98fd-cc932dd6173a" name="Digital Ocean SWGOH Manager" url="http://46.101.133.141">
-        <fileTransfer host="46.101.133.141" port="22" accessType="SFTP">
+      <webServer id="064f870e-c2f8-4aa8-98fd-cc932dd6173a" name="SWGOH Manager" url="http://94.177.189.97">
+        <fileTransfer host="94.177.189.97" port="22" privateKey="C:\Users\Lirveez\.ssh\id_rsa" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
           </advancedOptions>

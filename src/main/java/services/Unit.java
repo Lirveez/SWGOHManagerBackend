@@ -1,13 +1,26 @@
 package services;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Unit {
     private Stats stats;
     private int gear_level;
     private int power;
     private int lvl;
-    private String[] zetas;
+    private List<String> zetas = new ArrayList();
     private int stars;
     private String baze_id;
+
+    public Unit(Stats stats, int gear_level, int power, int lvl, List<String> zetas, int stars, String baze_id) {
+        this.stats = stats;
+        this.gear_level = gear_level;
+        this.power = power;
+        this.lvl = lvl;
+        this.zetas = zetas;
+        this.stars = stars;
+        this.baze_id = baze_id;
+    }
 
     public int getGear_level() {
         return gear_level;
@@ -33,7 +46,7 @@ public class Unit {
         return baze_id;
     }
 
-    public String[] getZetas() {
+    public List<String> getZetas() {
         return zetas;
     }
     public void setPower(int power) {
@@ -48,7 +61,7 @@ public class Unit {
         this.stats = stats;
     }
 
-    public void setZetas(String[] zetas) {
+    public void setZetas(List<String> zetas) {
         this.zetas = zetas;
     }
     public void setLvl(int lvl) {

@@ -2,6 +2,8 @@ import com.alibaba.fastjson.JSON;
 
 import commands.AjaxCommand;
 import commands.NotFoundCommand;
+import org.apache.log4j.Logger;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,19 +12,19 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class MainServlet extends HttpServlet {
+    private static final Logger log = Logger.getLogger(MainServlet.class);
     @Override
-    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         PrintWriter writer = resp.getWriter();
-        //writer.println("Parameters: " + JSON.toJSONString(req.getParameterMap()));
-        //writer.println("Servlet path: "+req.getServletPath());
-
+        log.info("Main Servlet started");
+        log.info("Есть соединение! IP: "+req.getRemoteAddr());
         String commandString = req.getServletPath().substring(1);
         String ajaxResponse = null;
-        System.out.println(commandString);
         if (!commandString.isEmpty())
         {
             String className = "commands."+commandString+"Command";
-            System.out.println(className);
+
+
             Class commandClass;
             try {
                 commandClass = Class.forName(className);

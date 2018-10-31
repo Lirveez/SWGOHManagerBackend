@@ -1,7 +1,7 @@
 commands\AjaxCommand.class
 services\Unit.class
-commands\GuildNamesCommand.class
 services\Profile.class
+commands\GetGuildCommand.class
 commands\NotFoundCommand$1.class
 commands\NotFoundCommand.class
 MainServlet.class
