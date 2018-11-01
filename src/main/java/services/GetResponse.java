@@ -12,8 +12,8 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 public class GetResponse {
-    public static JSONObject getResponse(String response,int id) throws IOException {
-        String get_url = response+id+"/";
+    public static JSONTokener getResponse(String response) throws IOException {
+        String get_url = response;
         HttpClient client = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet(get_url);
         InputStream input = client.execute(httpGet).getEntity().getContent();
@@ -26,6 +26,6 @@ public class GetResponse {
         JSONTokener Tokener = new JSONTokener(str.toString());
         httpGet.releaseConnection();
         ((CloseableHttpClient) client).close();
-        return new JSONObject(Tokener);
+        return Tokener;
     }
 }

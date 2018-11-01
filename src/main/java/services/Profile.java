@@ -21,7 +21,7 @@ public class Profile {
     private List<Unit> units = new ArrayList();
 
     public Profile(int ally_code) throws IOException {
-        JSONObject jsonObject = GetResponse.getResponse("https://swgoh.gg/api/player/",ally_code);
+        JSONObject jsonObject = new JSONObject(GetResponse.getResponse("https://swgoh.gg/api/player/"+ally_code+"/"));
         JSONArray unitsArr = jsonObject.getJSONArray("units");
         JSONObject data = jsonObject.getJSONObject("data");
         this.name = data.getString("name");
