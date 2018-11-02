@@ -1,10 +1,8 @@
 package commands;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 import services.GetResponse;
 import services.MySQLTools;
-import services.Profile;
 
 import java.io.IOException;
 import java.util.Map;
@@ -19,6 +17,7 @@ public class UpdateGuildCommand implements AjaxCommand {
         for (int i=0;i<players.length();i++){
             guild[i] = new Profile(players.getJSONObject(i));
         }*/
-        return "Success. Time spend: "+MySQLTools.insertData(MySQLTools.GUILD_PLAYERS,jsonObject.toString())+"ms";
+        return "Success. Time spend: "+(MySQLTools.insertData(MySQLTools.GUILD_PLAYERS,jsonObject.toString())+
+                MySQLTools.insertData(MySQLTools.UNITS,jsonObject.toString()))+"ms";
     }
 }

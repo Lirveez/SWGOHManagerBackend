@@ -6,15 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31bf464a-b839-48be-85a7-dd1803648018" name="Default Changelist" comment="Basic classes init">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SWGOHManagerBackend_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SWGOHManagerBackend_war_exploded.xml" afterDir="false" />
+    <list default="true" id="31bf464a-b839-48be-85a7-dd1803648018" name="Default Changelist" comment="MySql connections (upload data)">
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/AnalyseRequirementsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/AnalyseRequirementsCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/UpdateGuildCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/UpdateGuildCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/GetResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/GetResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/MySQLTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MySQLTools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ROOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ROOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ROOT/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/services/Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/services/Profile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/services/Profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/Profile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
@@ -61,7 +60,7 @@
           <entry key="gitignore" value="2" />
           <entry key="html" value="3" />
           <entry key="http" value="2" />
-          <entry key="java" value="34" />
+          <entry key="java" value="35" />
           <entry key="jsp" value="1" />
           <entry key="log" value="22" />
           <entry key="out" value="1" />
@@ -75,7 +74,7 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="HTML" value="3" />
-          <entry key="JAVA" value="34" />
+          <entry key="JAVA" value="35" />
           <entry key="JSP" value="1" />
           <entry key="PHP" value="2" />
           <entry key="PLAIN_TEXT" value="26" />
@@ -88,21 +87,21 @@
         <counts>
           <entry key="dummy" value="44" />
           <entry key="html" value="72" />
-          <entry key="java" value="10184" />
+          <entry key="java" value="10201" />
           <entry key="jsp" value="22" />
           <entry key="log" value="2" />
           <entry key="properties" value="58" />
           <entry key="pub" value="5" />
-          <entry key="txt" value="152" />
+          <entry key="txt" value="188" />
           <entry key="xml" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="72" />
-          <entry key="JAVA" value="10167" />
+          <entry key="JAVA" value="10184" />
           <entry key="JSP" value="22" />
-          <entry key="PLAIN_TEXT" value="203" />
+          <entry key="PLAIN_TEXT" value="239" />
           <entry key="Properties" value="58" />
           <entry key="SQL" value="17" />
           <entry key="XML" value="59" />
@@ -121,13 +120,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/services/MySQLTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+            <state relative-caret-position="-153">
+              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/AnalyseRequirementsCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1540985123035" expanded="true" signature="585:658" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -136,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/services/GetResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="333">
+              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,8 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/UpdateGuildCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
+            <state relative-caret-position="153">
+              <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -233,9 +245,9 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/UpdateCharactersCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/GetGuildCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/commands/UpdateGuildCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/GetResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/MySQLTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/UpdateGuildCommand.java" />
       </list>
     </option>
   </component>
@@ -351,7 +363,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541165956372" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541166005270" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -623,7 +635,7 @@
       <updated>1540459367777</updated>
       <workItem from="1540459377196" duration="53183000" />
       <workItem from="1540670001445" duration="71571000" />
-      <workItem from="1541104471753" duration="15091000" />
+      <workItem from="1541104471753" duration="15383000" />
     </task>
     <task id="LOCAL-00001" summary="Basic classes init">
       <created>1540985029806</created>
@@ -660,11 +672,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541099893050</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="MySql connections (upload data)">
+      <created>1541166025634</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1541166025634</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139845000" />
+    <option name="totallyTimeSpent" value="140137000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -679,7 +698,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14765458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14765458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -689,7 +708,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3991323" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -698,7 +717,7 @@
       <window_info anchor="bottom" id="REST Client" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.45783132" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32968238" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.32968238" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
@@ -707,7 +726,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24976437" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="right" id="Remote Host" order="4" visible="true" weight="0.19616205" />
+      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.19616205" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.26332623" />
       <window_info anchor="right" id="Database" order="7" weight="0.32799247" />
@@ -730,7 +749,8 @@
     <MESSAGE value="Response class" />
     <MESSAGE value="Update guild's members data" />
     <MESSAGE value="Characters to db command" />
-    <option name="LAST_COMMIT_MESSAGE" value="Characters to db command" />
+    <MESSAGE value="MySql connections (upload data)" />
+    <option name="LAST_COMMIT_MESSAGE" value="MySql connections (upload data)" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -808,13 +828,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huj.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/misterRnobeoymy/feedback.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/AnalyseRequirementsCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -874,16 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/UpdateGuildCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_172/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3553">
@@ -897,8 +900,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/GetResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="333">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/UpdateGuildCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -907,10 +920,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/MySQLTools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+        <state relative-caret-position="-153">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/AnalyseRequirementsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1540985123035" expanded="true" signature="585:658" ph="{...}" />
           </folding>
         </state>
       </provider>

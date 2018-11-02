@@ -1,5 +1,6 @@
 package services;
 
+import jdk.nashorn.internal.parser.JSONParser;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -18,12 +19,15 @@ public class GetResponse {
         HttpGet httpGet = new HttpGet(get_url);
         InputStream input = client.execute(httpGet).getEntity().getContent();
         Scanner scan = new Scanner(input);
-        StringBuilder str = new StringBuilder();
-        while (scan.hasNext())
+       // StringBuilder str = new StringBuilder();
+        StringBuffer str = new StringBuffer();
+        while (scan.hasNextLine())
         {
             str.append(scan.nextLine());
         }
         JSONTokener Tokener = new JSONTokener(str.toString());
+        scan.close();
+        input.close();
         httpGet.releaseConnection();
         ((CloseableHttpClient) client).close();
         return Tokener;
