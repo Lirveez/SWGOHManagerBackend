@@ -1,8 +1,12 @@
-commands\AjaxCommand.class
 services\Unit.class
-services\Profile.class
-commands\GetGuildCommand.class
+commands\AnalyseRequirementsCommand.class
 commands\NotFoundCommand$1.class
-commands\NotFoundCommand.class
+commands\UpdateCharactersCommand.class
 MainServlet.class
 services\Stats.class
+commands\AjaxCommand.class
+commands\UpdateGuildCommand.class
+services\Profile.class
+services\GetResponse.class
+services\MySQLTools.class
+commands\NotFoundCommand.class

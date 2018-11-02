@@ -1,3 +1,25 @@
+GET https://swgoh.gg/api/guild/26825/
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-02T042148.200.json
+
+###
+
+GET https://swgoh.gg/api/guild/26825/
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-01T070125.200.json
+
+###
+
+GET /swgoh.gg/api/guild/26825
+Accept: */*
+Cache-Control: no-cache
+
+###
+
 GET http://localhost:8080
 Accept: */*
 Cache-Control: no-cache

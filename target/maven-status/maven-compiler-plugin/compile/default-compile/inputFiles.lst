@@ -1,7 +1,11 @@
-D:\SWGOHManagerBackend\src\main\java\commands\GetGuildCommand.java
+D:\SWGOHManagerBackend\src\main\java\commands\UpdateGuildCommand.java
+D:\SWGOHManagerBackend\src\main\java\commands\AnalyseRequirementsCommand.java
+D:\SWGOHManagerBackend\src\main\java\commands\UpdateCharactersCommand.java
 D:\SWGOHManagerBackend\src\main\java\commands\AjaxCommand.java
 D:\SWGOHManagerBackend\src\main\java\commands\NotFoundCommand.java
 D:\SWGOHManagerBackend\src\main\java\MainServlet.java
+D:\SWGOHManagerBackend\src\main\java\services\MySQLTools.java
 D:\SWGOHManagerBackend\src\main\java\services\Unit.java
 D:\SWGOHManagerBackend\src\main\java\services\Stats.java
 D:\SWGOHManagerBackend\src\main\java\services\Profile.java
+D:\SWGOHManagerBackend\src\main\java\services\GetResponse.java
