@@ -7,7 +7,7 @@ import services.MySQLTools;
 import java.io.IOException;
 import java.util.Map;
 
-public class UpdateGuildCommand implements AjaxCommand {
+public class UpdateGuild implements Ajax {
     @Override
     public Object doCommand(Map parameters) throws IOException {
         int guild_id =  Integer.parseInt(((String[]) parameters.get("guild_id"))[0]);
@@ -17,7 +17,7 @@ public class UpdateGuildCommand implements AjaxCommand {
         for (int i=0;i<players.length();i++){
             guild[i] = new Profile(players.getJSONObject(i));
         }*/
-        return "Success. Time spend: "+(MySQLTools.insertData(MySQLTools.GUILD_PLAYERS,jsonObject.toString())+
-                MySQLTools.insertData(MySQLTools.UNITS,jsonObject.toString()))+"ms";
+        return "Success. Time spend: "+(MySQLTools.insertData(MySQLTools.SET_GUILD_PLAYERS,jsonObject.toString())+
+                MySQLTools.insertData(MySQLTools.SET_UNITS,jsonObject.toString()))+"ms";
     }
 }

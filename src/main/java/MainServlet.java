@@ -1,7 +1,7 @@
 import com.alibaba.fastjson.JSON;
 
-import commands.AjaxCommand;
-import commands.NotFoundCommand;
+import commands.Ajax;
+import commands.NotFound;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -15,6 +15,16 @@ public class MainServlet extends HttpServlet {
     private static final Logger log = Logger.getLogger(MainServlet.class);
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        requestGetter(req, resp);
+
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        requestGetter(req, resp);
+    }
+
+    private void requestGetter(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         PrintWriter writer = resp.getWriter();
         log.info("Main Servlet started");
         log.info("Есть соединение! IP: "+req.getRemoteAddr());
@@ -22,19 +32,17 @@ public class MainServlet extends HttpServlet {
         String ajaxResponse = null;
         if (!commandString.isEmpty())
         {
-            String className = "commands."+commandString+"Command";
-
-
+            String className = "commands."+commandString;
             Class commandClass;
             try {
                 commandClass = Class.forName(className);
             } catch (ClassNotFoundException e) {
-                commandClass = NotFoundCommand.class;
+                commandClass = NotFound.class;
 
             }
             try {
-                AjaxCommand ajaxCommand = (AjaxCommand)commandClass.newInstance();
-                ajaxResponse = JSON.toJSONString(ajaxCommand.doCommand(req.getParameterMap()));
+                Ajax ajax = (Ajax)commandClass.newInstance();
+                ajaxResponse = JSON.toJSONString(ajax.doCommand(req.getParameterMap()));
             } catch (InstantiationException | IllegalAccessException e) {
                 e.printStackTrace();
             }
@@ -42,6 +50,5 @@ public class MainServlet extends HttpServlet {
         }
         writer.println(ajaxResponse);
         writer.close();
-
     }
 }
